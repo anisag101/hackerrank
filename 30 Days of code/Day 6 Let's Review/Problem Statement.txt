@@ -1,0 +1,100 @@
+bjective
+Today we will expand our knowledge of strings, combining it with what we have already learned about loops. Check out the Tutorial tab for learning materials and an instructional video.
+
+Task
+Given a string, , of length  that is indexed from  to , print its even-indexed and odd-indexed characters as  space-separated strings on a single line (see the Sample below for more detail).
+
+Note:  is considered to be an even index.
+
+Example
+
+
+Print abc def
+
+Input Format
+
+The first line contains an integer,  (the number of test cases).
+Each line  of the  subsequent lines contain a string, .
+
+Constraints
+
+Output Format
+
+For each String  (where ), print 's even-indexed characters, followed by a space, followed by 's odd-indexed characters.
+
+Sample Input
+
+2
+Hacker
+Rank
+Sample Output
+
+Hce akr
+Rn ak
+Explanation
+
+Test Case 0: 
+
+
+
+
+
+
+The even indices are , , and , and the odd indices are , , and . We then print a single line of  space-separated strings; the first string contains the ordered characters from 's even indices (), and the second string contains the ordered characters from 's odd indices ().
+
+Test Case 1: 
+
+
+
+
+The even indices are  and , and the odd indices are  and . We then print a single line of  space-separated strings; the first string contains the ordered characters from 's even indices (), and the second string contains the ordered characters from 's odd indices ().
+
+Language
+Java 8
+More
+23456789101112133018192028151621222317142425262729131
+        int testNo = scan.nextInt();
+        for (int i =1 ; i <=testNo ; i++)
+        {
+           String string = scan.next();
+           char[] charA = string.toCharArray();
+           String even = "";
+           String odd = "";
+           
+            for (int j =0 ; j< string.length() ; j++)
+            {
+
+Line: 16 Col: 26
+
+Test against custom input
+Congratulations
+You solved this challenge. Would you like to challenge your friends?Share on FacebookShare on TwitterShare on LinkedIn
+
+Test case 0
+
+Test case 1
+
+Test case 2
+
+Test case 3
+
+Test case 4
+
+Test case 5
+
+Test case 6
+
+Test case 7
+
+Test case 8
+
+Test case 9
+Compiler Message
+Success
+Input (stdin)
+2
+Hacker
+Rank
+Expected Output
+Hce akr
+Rn ak
